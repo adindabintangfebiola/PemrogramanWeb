@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>About Me</title>
+</head>
+</html>
+<style>
+    * {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  img {
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  padding: 20px;
+  width: 300px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+  /* Style the header */
+  header {
+    background-color: #686565;
+    padding: 18px;
+    text-align: center;
+    font-size: 18px;
+    color: rgb(250, 240, 240);
+  }
+  
+  /* Create two columns/boxes that floats next to each other */
+  nav {
+    float: left;
+    width: 15%;
+    height: 400px; /* only for demonstration, should be removed */
+    background: #ccc;
+    padding: 10px;
+  }
+  
+  /* Style the list inside the menu */
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  article {
+    float: left;
+    padding: 20px;
+    width: 70%;
+    background-color: azure;
+    height: 200px; /* only for demonstration, should be removed */
+  }
+  
+  /* Clear floats after the columns */
+  section::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Style the footer */
+  footer {
+    background-color: #777;
+    padding: 10px;
+    text-align: center;
+    color: white;
+  }
+  div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 250px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+.social-media a {
+    display: inline-block;
+    margin-right: 30px;
+    text-decoration: none;
+    color: #111111;
+    text-align: center;
+}
+
+  /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+  @media (max-width: 600px) {
+    nav, article {
+      width: 100%;
+      height: auto;
+    }
+  }
+</style>
+<body>
+    <body style="background-color:azure;"></body>
+    <h2>Adinda Bintang Febiola</h2>
+    <img src="d:\IMG_20231112_114611.jpg"alt="image" style="width: 300px;">
+    <p>Nama saya Adinda Bintang Febiola, usia saya 20 tahun, saya lahir di Brebes, 15 februari 2003, sekarang saya duduk di semester 3 teknik informatika di politeknik harapan bersama tegal. </p>
+    <header>
+      <h2>About Me</h2>
+    </header>
+    <section>
+      <nav>
+        <ul>
+          <li><a href="#">instagram</a></li>
+          <li><a href="#">facebook</a></li>
+          <li><a href="#">Whatsapp</a></li>
+        </ul>
+      </nav>
+      
+      <article>
+        <h1>Tentang Diri Saya</h1>
+        <p>Saya Adinda Bintang Febiola, usia 20 tahun. saya suka sekali musik, saya suka sekali mendengarkan dan saya suka berolahraga seperti workout,gym, walaupun di selingi dengan makanan tidak sehat, saya juga sangat suka sekali dengan fashion dan make up. di umur saya yang ke 7 tahun sampai 18 tahun saya masuk kelas modelling, fashion dan beberapa kali ikut perlombaaanya. saya sempat cuti kuliah selama 1 tahun dan memanfaatkan itu dengan mengikuti kelas make up dan di selingi dengan menjadi MUA. saya juga terjun ke dunia kecantikan dan sempat mengikuti kelas kesehatan kecantikan. itu beberapa pengalaman yang saya lakukan dari usia 7 tahun sampai 20 tahun. </p>
+        <p>Pada saat saya cuti kuliah selama 1 tahun, saya manfaatkan itu dengan bekerja di suatu klinik kecantikan untuk menjadi konsultant dengan beberapa prosedur yang sudah saya pelajari sebelumnya. saya juga sempat melatih diri saya untuk menjadi make over. saya sangat senang di dunia kecantikan karena basic saya ada di kesehatan dan kecantikan.</p>
+      </article>
+    </section>
+    <section>
+        <div class="gallery">
+            <a target="_blank" href="1_20221022_090318_0000.png">
+              <img src="1_20221022_090318_0000.png" alt="image" width="600" height="400">
+            </a>
+            <div class="desc">Brosur Pemasaran dan PriceList Treatment</div>
+          </div>
+          
+          <div class="gallery">
+            <a target="_blank" href="IMG_20231112_124056.jpg">
+              <img src="IMG_20231112_124056.jpg" alt="image" width="600" height="400">
+            </a>
+            <div class="desc">Picture Before and After Treatment </div>
+          </div>
+          
+          <div class="gallery">
+            <a target="_blank" href="6a34f5299b321f23636df7d1ffb423ba.jpg">
+              <img src="6a34f5299b321f23636df7d1ffb423ba.jpg" alt="image" width="600" height="400">
+            </a>
+            <div class="desc">Picture Before and After Treatment</div>
+          </div>
+    </section>
+    <section id="contact">
+        <h2>Kontak Saya</h2>
+        <p>Nomor Telepon: 089518572538</p>
+        <div class="social-media">
+            <a href="adindabintangfebiola@gmail.com" target="_blank">Email</a>
+            <a href="https://www.facebook.com/" target="_blank">Facebook</a>
+            <a href="https://www.instagram.com/adndbf/" target="_blank">instagram</a>
+            <a href="https://github.com/adindabintangfebiola/PemrogramanWeb.git" target="_blank">Github</a>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
